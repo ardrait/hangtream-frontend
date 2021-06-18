@@ -1,0 +1,122 @@
+body{
+  height: 100vh;
+}
+#root{
+  height: 100%;
+}
+.movie-main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 231, 231);
+    padding: 145px 80px 0 80px;
+    margin: 0;
+}
+.stream-option-main{
+  height: 0;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+.react-player-movies{
+  transition: 0.5s;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 160px;
+  background: black;
+}
+.movie-tile{
+    transition: 1s;
+    position: relative;
+    width: 255px;
+    border-radius: 10px;
+}
+.movie-tile:hover{
+    transition: 0.5s;
+    width: 350px; 
+    position: absolute;
+    z-index: 1000;
+    box-shadow: -1px -1px 14px -1px rgba(0,0,0,0.75);
+}
+.movie-tile iframe,object{
+  border: none;
+  border-radius: 13px;
+}
+.movie-tile:hover>.stream-option-main ,.stream-option-main:hover{
+  display: block;
+  height: 200px;
+  padding: 20px 20px 0 20px;
+}
+.genre{
+  padding-top: 0;
+  display: flex;
+  font-weight: bolder;
+  font-size: 13px;
+  color:  rgb(158, 158, 158);
+}
+.movie-tile:hover>.react-player-movies{
+  height: 210px;
+  width: 100%; 
+  border-radius: 10px 10px 0 0;
+}
+.movie-tile:hover>.non-hover-h6{
+  display: none;
+}
+.movie-tile .dark-theme-h6{
+  color: rgb(199, 199, 199);
+}
+.movie-tile .hover-h6{
+  margin-top:25px;
+  color:  rgb(199, 199, 199);
+  display: inline-block;
+}
+.rating-main{
+  color:  rgb(199, 199, 199);
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+}
+.movie-tile h6{
+  display: flex;
+  text-align: center;
+  color: black;
+  margin-right: 18px;
+}
+.ratings{
+  color: rgb(0, 117, 0);
+  font-weight: bolder;
+}
+.plot{
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  text-align: start!important;
+  padding-top: 3px;
+}
+.movie-thumbnail{
+  width: 255px;
+  height: 160px;
+  margin: 0 12px 57px 0;
+  background: none;
+  border-radius: 10px;
+}
+.stream-btn{
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-right: 12px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: black;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, .3);
+    border-radius: 10px
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: outset 0 0 6px 20px rgba(0, 0, 0, .3);
+    background:rgb(101, 164, 103);
+  }
